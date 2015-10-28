@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         startNewGame()
         updateLabels()
+        sliderUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,6 +87,26 @@ class ViewController: UIViewController {
         
         presentViewController(alert, animated: true, completion: nil)
         
+    }
+    
+    func sliderUI() {
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, forState: .Normal)
+        
+        let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, forState: .Highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        if let trackLeftImage = UIImage(named: "SliderTrackLeft") {
+            let trackLeftResizeable = trackLeftImage.resizableImageWithCapInsets(insets)
+            slider.setMinimumTrackImage(trackLeftImage, forState: .Normal)
+        }
+        
+        if let trackRightImage = UIImage(named: "SliderTrackRight") {
+            let trackRightResizable = trackRightImage.resizableImageWithCapInsets(insets)
+            slider.setMaximumTrackImage(trackRightImage, forState: .Normal)
+        }
     }
     
     
