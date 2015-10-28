@@ -13,6 +13,7 @@
 		63AB88971BDFF18A00D945E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB88961BDFF18A00D945E8 /* Assets.xcassets */; };
 		63AB889A1BDFF18A00D945E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AB88981BDFF18A00D945E8 /* LaunchScreen.storyboard */; };
 		63AB88A21BE159C000D945E8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB88A11BE159C000D945E8 /* AboutViewController.swift */; };
+		63AB88A61BE18C5900D945E8 /* HitMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 63AB88A51BE18C5900D945E8 /* HitMe.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		63AB88991BDFF18A00D945E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63AB889B1BDFF18A00D945E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63AB88A11BE159C000D945E8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		63AB88A51BE18C5900D945E8 /* HitMe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HitMe.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				63AB888F1BDFF18A00D945E8 /* AppDelegate.swift */,
 				63AB88A11BE159C000D945E8 /* AboutViewController.swift */,
+				63AB88A51BE18C5900D945E8 /* HitMe.html */,
 				63AB88911BDFF18A00D945E8 /* ViewController.swift */,
 				63AB88931BDFF18A00D945E8 /* Main.storyboard */,
 				63AB88961BDFF18A00D945E8 /* Assets.xcassets */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63AB889A1BDFF18A00D945E8 /* LaunchScreen.storyboard in Resources */,
+				63AB88A61BE18C5900D945E8 /* HitMe.html in Resources */,
 				63AB88971BDFF18A00D945E8 /* Assets.xcassets in Resources */,
 				63AB88951BDFF18A00D945E8 /* Main.storyboard in Resources */,
 			);
