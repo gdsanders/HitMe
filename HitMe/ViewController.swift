@@ -53,13 +53,24 @@ class ViewController: UIViewController {
         
         score += points
         
+        let title: String
+        
+        if difference == 0 {
+            title = "Perfect! ✭✭🎖✭✭"
+        }  else if difference < 5 {
+            title = "Almost!  Very good score! 😎 "
+        }  else if difference < 10 {
+            title = "Pretty good. Have a 🌮"
+        } else {
+            title = "Come on. You can do better! 👎"
+        }
+        
         
         let message = "You scored \(points) points"
-        + "\nThe value of the slider is: \(currentValue)"
-        + "\nThe target value is: \(targetValue)"
-        + "\nThe difference is: \(difference)"
+                    + "\nYour guess was \(currentValue)"
         
-        let alert = UIAlertController(title: "Hit Me", message: message, preferredStyle: .Alert)
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         
         let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
         
