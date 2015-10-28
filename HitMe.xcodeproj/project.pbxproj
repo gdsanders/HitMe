@@ -12,6 +12,7 @@
 		63AB88951BDFF18A00D945E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AB88931BDFF18A00D945E8 /* Main.storyboard */; };
 		63AB88971BDFF18A00D945E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB88961BDFF18A00D945E8 /* Assets.xcassets */; };
 		63AB889A1BDFF18A00D945E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AB88981BDFF18A00D945E8 /* LaunchScreen.storyboard */; };
+		63AB88A21BE159C000D945E8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB88A11BE159C000D945E8 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		63AB88961BDFF18A00D945E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AB88991BDFF18A00D945E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63AB889B1BDFF18A00D945E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63AB88A11BE159C000D945E8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				63AB888F1BDFF18A00D945E8 /* AppDelegate.swift */,
+				63AB88A11BE159C000D945E8 /* AboutViewController.swift */,
 				63AB88911BDFF18A00D945E8 /* ViewController.swift */,
 				63AB88931BDFF18A00D945E8 /* Main.storyboard */,
 				63AB88961BDFF18A00D945E8 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AB88A21BE159C000D945E8 /* AboutViewController.swift in Sources */,
 				63AB88921BDFF18A00D945E8 /* ViewController.swift in Sources */,
 				63AB88901BDFF18A00D945E8 /* AppDelegate.swift in Sources */,
 			);

@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        startNewRound()
+        startNewGame()
         updateLabels()
     }
 
@@ -43,6 +43,12 @@ class ViewController: UIViewController {
         targetLabel.text = "\(targetValue)"
         scoreLabel.text = "\(score)"
         roundLabel.text = "\(round)"
+    }
+    
+    func startNewGame() {
+        score = 0
+        round = 0
+        startNewRound()
     }
 
 
@@ -88,5 +94,13 @@ class ViewController: UIViewController {
         currentValue = lroundf(sender.value)
         
     }
+    
+    
+    @IBAction func startOver(sender: UIButton) {
+        startNewGame()
+        updateLabels()
+    }
+    
+    
 }
 
