@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
     
@@ -100,12 +101,12 @@ class ViewController: UIViewController {
         
         if let trackLeftImage = UIImage(named: "SliderTrackLeft") {
             let trackLeftResizeable = trackLeftImage.resizableImageWithCapInsets(insets)
-            slider.setMinimumTrackImage(trackLeftImage, forState: .Normal)
+            slider.setMinimumTrackImage(trackLeftResizeable, forState: .Normal)
         }
         
         if let trackRightImage = UIImage(named: "SliderTrackRight") {
             let trackRightResizable = trackRightImage.resizableImageWithCapInsets(insets)
-            slider.setMaximumTrackImage(trackRightImage, forState: .Normal)
+            slider.setMaximumTrackImage(trackRightResizable, forState: .Normal)
         }
     }
     
@@ -120,6 +121,12 @@ class ViewController: UIViewController {
     @IBAction func startOver(sender: UIButton) {
         startNewGame()
         updateLabels()
+        
+        let transition = CATransition()
+        transition.type = kCATransitionFade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        view.layer.addAnimation(transition, forKey: nil)
     }
     
     
